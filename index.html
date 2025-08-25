@@ -1,44 +1,51 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="pt-br"> <!-- Define o tipo de documento e a linguagem como português do Brasil -->
 <head>
-  <meta charset="UTF-8">
-  <title>hamburgaria</title>
-  <link rel="stylesheet" href="./style/style.css">
-
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <title>Hamburgueria</title> <!-- Título da aba do navegador -->
+  <link rel="stylesheet" href="./style/style.css"> <!-- Importa o arquivo CSS externo -->
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<header>
-  <img class="banner" src="https://instagram.fcgh15-1.fna.fbcdn.net/v/t51.2885-19/434230991_311574628300486_8932350282587298453_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby42MjcuYzIifQ&_nc_ht=instagram.fcgh15-1.fna.fbcdn.net&_nc_cat=110&_nc_oc=Q6cZ2QEXfYi_aNgQqgb0nrtIbBpFoYYSIHzkJO_ts-hUAjVSFw14ZsB7IGt5UK0nJT1FyQ4&_nc_ohc=FmO9f00XCugQ7kNvwGGfWQl&_nc_gid=1npdHmNPQvqlT2i3snBPTQ&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfWDXu_GbVUITGbzPbKxRLPeLQn_PPxD60tPNhbGFNpLZQ&oe=68AEC245&_nc_sid=7a9f4b">
-</header>
 
-<nav class="menu">
-  <ul>
-    <li>
-      <a href="#">Página Inicial</a>
-    </li>
+  <!-- Vídeo de fundo -->
+  <video autoplay muted loop id="bg-video">
+    <!-- Define o vídeo que será exibido como fundo da página -->
+    <source src="./videos/fundo.mp4" type="video/mp4">
+    <!-- Mensagem alternativa caso o navegador não suporte vídeo HTML5 -->
+    Seu navegador não suporta vídeos em HTML5.
+  </video>
 
-    <li>
-      <a href="#">Cardápio</a>
-    </li>
+  <!-- Camada escura por cima do vídeo para melhorar contraste do conteúdo -->
+  <div class="overlay"></div>
 
-    <li>
-      <a href="#">Sobre a Hamburgueria</a>
-    </li>
+  <!-- Cabeçalho com logo e menu de navegação -->
+  <header class="top-bar">
+    <div class="logo">
+      <!-- Imagem da logo da hamburgueria -->
+      <img src="./images/logo.jpg" alt="Logo">
+    </div>
 
-    <li>
-      <a href="#">Contato</a>
-    </li>
-  </ul>
-</nav>
+    <nav class="menu">
+      <!-- Lista de links do menu de navegação -->
+      <ul>
+        <li><a href="#">Página Inicial</a></li> <!-- Link para a página inicial -->
+        <li><a href="#">Cardápio</a></li>        <!-- Link para o cardápio -->
+        <li><a href="#">Sobre</a></li>           <!-- Link para a seção "Sobre" -->
+        <li><a href="#">Contato</a></li>         <!-- Link para a seção de contato -->
+      </ul>
+    </nav>
+  </header>
 
-<body>
+  <!-- Rodapé da página -->
+  <footer>
+    <p>TODOS OS DIREITOS RESERVADOS</p> <!-- Texto de direitos autorais -->
+  </footer>
+
 </body>
 
-<footer>
-  <p>TODOS OS DIREITOS RESERVADOS</p>
-</footer>
-<!-- partial -->
-  
-</body>
+<!-- Script para controlar a velocidade do vídeo de fundo -->
+<script>
+  const video = document.getElementById("bg-video");
+  video.playbackRate = 2; // Define a velocidade de reprodução do vídeo (2x mais rápido)
+</script>
 </html>
