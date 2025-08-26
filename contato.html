@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <title>Contato - Hamburgueria</title> <!-- Título exibido na aba do navegador -->
+  
+  <!-- Importa os arquivos de estilo CSS -->
+  <link rel="stylesheet" href="./style/style.css"> <!-- Estilos gerais do site -->
+  <link rel="stylesheet" href="./style/contato.css"> <!-- Estilos específicos da página de contato -->
+</head>
+<body> <!-- Início do corpo da página -->
+
+  <!-- Vídeo de fundo que cobre toda a tela -->
+  <video autoplay muted loop id="bg-video"> <!-- Reproduz automaticamente, sem som e em loop -->
+    <source src="./videos/fundo.mp4" type="video/mp4"> <!-- Fonte do vídeo em formato MP4 -->
+    Seu navegador não suporta vídeos em HTML5. <!-- Mensagem alternativa caso o vídeo não carregue -->
+  </video>
+
+  <!-- Camada escura sobre o vídeo para melhorar a legibilidade do conteúdo -->
+  <div class="overlay"></div>
+
+  <!-- Cabeçalho com logo e menu de navegação -->
+  <header class="top-bar"> <!-- Barra superior da página -->
+    <div class="logo"> <!-- Área da logo -->
+      <img src="./images/logo.jpg" alt="Logo"> <!-- Imagem da logo da hamburgueria -->
+    </div>
+
+    <nav class="menu"> <!-- Menu de navegação principal -->
+      <ul> <!-- Lista de links do menu -->
+        <li><a href="index.html">Página Inicial</a></li> <!-- Link para a página inicial -->
+        <li><a href="cardapio.html">Cardápio</a></li> <!-- Link para o cardápio -->
+        <li><a href="sobre.html">Sobre</a></li> <!-- Link para a página sobre a empresa -->
+        <li><a href="contato.html">Contato</a></li> <!-- Link para a página de contato -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção principal de contato -->
+  <section class="contato"> <!-- Seção estilizada para o formulário de contato -->
+    <div class="container"> <!-- Container para centralizar e limitar a largura do conteúdo -->
+      <h2>Fale com a gente</h2> <!-- Título da seção de contato -->
+
+      <form> <!-- Início do formulário -->
+        <input type="text" name="nome" placeholder="Seu nome" required> <!-- Campo para nome do usuário -->
+        <input type="email" name="email" placeholder="Seu e-mail" required> <!-- Campo para e-mail -->
+        <input type="tel" name="whatsapp" placeholder="Seu WhatsApp" required> <!-- Campo para número de WhatsApp -->
+        <textarea name="mensagem" placeholder="Sua mensagem" rows="4"></textarea> <!-- Campo de mensagem com 4 linhas -->
+
+        <!-- Checkbox para consentimento de comunicação -->
+        <label class="checkbox-container"> <!-- Agrupamento do checkbox com texto -->
+          <input type="checkbox" name="atualizacoes"> <!-- Checkbox para receber atualizações -->
+          Quero receber atualizações por WhatsApp ou e-mail <!-- Texto explicativo -->
+        </label>
+
+        <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé da página -->
+  <footer>
+    <p>TODOS OS DIREITOS RESERVADOS</p> <!-- Texto de direitos autorais -->
+  </footer>
+
+  <!-- Script para controlar a velocidade do vídeo de fundo -->
+  <script>
+    const video = document.getElementById("bg-video"); // Seleciona o vídeo pelo ID
+    video.playbackRate = 2; // Define a velocidade de reprodução como 2x
+  </script>
+</body>
+</html>
