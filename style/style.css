@@ -44,6 +44,7 @@ body, html {
   z-index: 2;              /* Fica acima da camada de vídeo e overlay */
 }
 
+
 /* === Estilo da logo === */
 .logo img {
   width: 80px;             /* Largura da imagem da logo */

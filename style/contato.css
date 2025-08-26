@@ -82,3 +82,11 @@
 .contato button:hover {
   background: #e6b800; /* Cor dourada mais escura ao passar o mouse */
 }
+
+fieldset {
+  border-radius: 5px;
+  color: #ddd;
+  background: #222;
+  border: 1px solid;
+  font-weight: bold;
+}
