@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br"> <!-- Define o tipo de documento e a linguagem como português do Brasil -->
+
 <head>
   <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
   <title>Hamburgueria</title> <!-- Título da aba do navegador -->
   <link rel="stylesheet" href="./style/style.css"> <!-- Importa o arquivo CSS externo -->
 </head>
+
 <body>
 
   <!-- Vídeo de fundo -->
@@ -29,9 +31,9 @@
       <!-- Lista de links do menu de navegação -->
       <ul>
         <li><a href="index.html">Página Inicial</a></li> <!-- Link para a página inicial -->
-        <li><a href="cardapio.html">Cardápio</a></li>        <!-- Link para o cardápio -->
-        <li><a href="sobre.html">Sobre</a></li>           <!-- Link para a seção "Sobre" -->
-        <li><a href="contato.html">Contato</a></li>         <!-- Link para a seção de contato -->
+        <li><a href="cardapio.html">Cardápio</a></li> <!-- Link para o cardápio -->
+        <li><a href="sobre.html">Sobre</a></li> <!-- Link para a seção "Sobre" -->
+        <li><a href="contato.html">Contato</a></li> <!-- Link para a seção de contato -->
       </ul>
     </nav>
   </header>
@@ -41,11 +43,12 @@
     <p>TODOS OS DIREITOS RESERVADOS</p> <!-- Texto de direitos autorais -->
   </footer>
 
+  <!-- Script para controlar a velocidade do vídeo de fundo -->
+    <script>
+    const video = document.getElementById("bg-video");
+    video.playbackRate = 0.5; // Define a velocidade de reprodução do vídeo (2x mais rápido)
+    </script>
 </body>
 
-<!-- Script para controlar a velocidade do vídeo de fundo -->
-<script>
-  const video = document.getElementById("bg-video");
-  video.playbackRate = 0.5; // Define a velocidade de reprodução do vídeo (2x mais rápido)
-</script>
+
 </html>
