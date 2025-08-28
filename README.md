@@ -3,7 +3,7 @@
 <h3> Sobre o projeto </h3>
 <br>
 Esse projeto é sobre uma hamburgueria chamada KAUÊ BURGUER, localizada no centro de cotia, onde tem lanches e bebidas. É uma hamburgueria cristã.
-<br>
+<br><br>
 ## index - BARBARA
 <br>
 ## sobre - MATHEUS
