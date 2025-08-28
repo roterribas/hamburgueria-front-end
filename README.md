@@ -3,9 +3,13 @@
 <h3> Sobre o projeto </h3>
 <br>
 Esse projeto é sobre uma hamburgueria chamada KAUÊ BURGUER, localizada no centro de cotia, onde tem lanches e bebidas. É uma hamburgueria cristã.
+<br>
 ## index - BARBARA
+<br>
 ## sobre - MATHEUS
+<b>
 ## cardapio - GUILHERME
+<br>
 ## contato - RODRIGO
 <br>
 Nesta pagina tera um formulario para o usuario tirar as suas duvidas, colocando seu nome, email, whatsapp, comentario e ele pode escolher por onde quer receber novidas, por email ou whatsapp
