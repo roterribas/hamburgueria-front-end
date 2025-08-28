@@ -1,23 +1,23 @@
 # hamburgueria-front-end
-<br>
-<h3> Sobre o projeto </h3>
-<br>
+
+## Sobre o projeto 
+
 Esse projeto é sobre uma hamburgueria chamada KAUÊ BURGUER, localizada no centro de cotia, onde tem lanches e bebidas. É uma hamburgueria cristã.
-<br><br>
-## index - BARBARA
-<br>
-## sobre - MATHEUS
-<b><br>
-## cardapio - GUILHERME
-<br>
-## contato - RODRIGO
-<br>
+
+### index - BARBARA
+
+### sobre - MATHEUS
+
+### cardapio - GUILHERME
+
+### contato - RODRIGO
+
 Nesta pagina tera um formulario para o usuario tirar as suas duvidas, colocando seu nome, email, whatsapp, comentario e ele pode escolher por onde quer receber novidas, por email ou whatsapp
-<br><br>
+
 KAUÊ BURGER🙌🏽COTIA/SP
-<br>
+
 Hamburgueria
-<br>
+
 🙌🏽 HAMBURGUERIA CRISTÃ
 <br>
 🍔O RODÍZIO DE MINI BURGER
