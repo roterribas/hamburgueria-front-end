@@ -14,18 +14,18 @@ Esse projeto é sobre uma hamburgueria chamada KAUÊ BURGUER, localizada no cent
 
 Nesta pagina tera um formulario para o usuario tirar as suas duvidas, colocando seu nome, email, whatsapp, comentario e ele pode escolher por onde quer receber novidas, por email ou whatsapp
 
+-----------------------------------
+
 KAUÊ BURGER🙌🏽COTIA/SP
 
 Hamburgueria
 
 🙌🏽 HAMBURGUERIA CRISTÃ
-<br>
-🍔O RODÍZIO DE MINI BURGER
-<br>
-MAIS ABENÇOADO DA CIDADE
-<br>
-🍔BURGER • FRITAS • MILK SHAKE
-<br>
-📍Av. PROF. BARRETO 860/COTIA
-<br>
 
+🍔O RODÍZIO DE MINI BURGER
+
+MAIS ABENÇOADO DA CIDADE
+
+🍔BURGER • FRITAS • MILK SHAKE
+
+📍Av. PROF. BARRETO 860/COTIA
