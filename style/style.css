@@ -1,88 +1,72 @@
-/* === Reset básico === */
-body, html {
-  margin: 0;               /* Remove margens padrão do navegador */
-  padding: 0;              /* Remove espaçamentos internos padrão */
-  height: 100%;            /* Garante que ocupem toda a altura da janela */
-  font-family: "Poppins", sans-serif; /* Define a fonte principal da página */
-  color: #fff;             /* Define a cor padrão do texto como branco */
-  position: relative;      /* Permite posicionamento relativo de elementos filhos */
-  overflow-x: hidden;      /* Evita rolagem horizontal indesejada */
+
+* {
+  margin: 0;
+  padding: 0;
+
 }
 
-/* === Vídeo de fundo === */
-#bg-video {
-  position: fixed;         /* Fixa o vídeo na tela, mesmo com rolagem */
-  top: 0;                  /* Alinha o topo do vídeo com o topo da tela */
-  left: 0;                 /* Alinha a esquerda do vídeo com a borda esquerda da tela */
-  width: 100%;             /* Ocupa toda a largura da tela */
-  height: 100%;            /* Ocupa toda a altura da tela */
-  object-fit: cover;       /* Garante que o vídeo cubra toda a área sem distorcer */
-  z-index: -2;             /* Coloca o vídeo atrás de todos os outros elementos */
-  filter: brightness(35%); /* Escurece o vídeo para destacar o conteúdo sobreposto */
+body {
+  background: black;
+  font-family: sans-serif; 
 }
 
-/* === Camada escura sobre o vídeo === */
-.overlay {
-  position: fixed;         /* Fixa a camada na tela */
-  top: 0;                  /* Alinha o topo da camada com o topo da tela */
-  left: 0;                 /* Alinha a esquerda da camada com a borda esquerda da tela */
-  width: 100%;             /* Ocupa toda a largura da tela */
-  height: 100%;            /* Ocupa toda a altura da tela */
-  background: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
-  z-index: -1;             /* Fica acima do vídeo, mas abaixo do conteúdo principal */
+/* Container do vídeo */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  margin-bottom: 0px;
+  box-shadow: 0 0 10px #ffcc00;
+  
+
 }
 
-/* === Barra superior com logo e menu === */
-.top-bar {
-  display: flex;           /* Layout flexível para alinhar logo e menu */
-  justify-content: space-between; /* Espaço entre logo e menu */
-  align-items: center;     /* Alinha verticalmente os itens */
-  padding: 15px 40px;      /* Espaçamento interno da barra */
-  background: rgba(44, 44, 44, 0.5); /* Fundo escuro semi-transparente */
-  position: sticky;        /* Fixa no topo ao rolar a página */
-  top: 0;                  /* Define a posição no topo da tela */
-  z-index: 2;              /* Fica acima da camada de vídeo e overlay */
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
+/* Menu transparente */
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.55); /* fundo escuro transparente */
+  font-size: 30px;
 
-/* === Estilo da logo === */
+}
+
+.menu-content {
+  max-width: 1200px;   /* largura máxima do conteúdo */
+  margin: 0 auto;      /* centraliza dentro do site */
+  padding: 15px 40px;  /* espaço interno */
+  display: flex;
+  justify-content: space-between; /* logo à esquerda e links à direita */
+  align-items: center;
+}
+
 .logo img {
-  width: 80px;             /* Largura da imagem da logo */
-  height: 80px;            /* Altura da imagem da logo */
+  width: 100px;             /* Largura da imagem da logo */
+  height: 100px;            /* Altura da imagem da logo */
   border-radius: 50%;      /* Deixa a imagem circular */
   border: 3px solid #ffcc00; /* Borda dourada */
   box-shadow: 0 0 10px #ffcc00; /* Brilho ao redor da logo */
 }
 
-/* === Menu de navegação === */
-.menu ul {
-  list-style: none;        /* Remove os marcadores da lista */
-  display: flex;           /* Alinha os itens horizontalmente */
-  gap: 40px;               /* Espaço entre os itens do menu */
-  margin: 0;               /* Remove margens padrão */
-  padding: 0;              /* Remove espaçamentos internos padrão */
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: bold;
+  transition: color 0.3s;
+  border-radius: 20px;
+  padding: 5px;
+  
 }
 
-.menu a {
-  color: #fff;             /* Cor do texto: branco */
-  text-decoration: none;   /* Remove sublinhado dos links */
-  font-weight: bold;       /* Texto em negrito */
-  font-size: 16px;         /* Tamanho da fonte */
-  transition: color 0.3s;  /* Suaviza a transição de cor ao passar o mouse */
-}
-
-.menu a:hover {
-  color: #ffcc00;          /* Cor dourada ao passar o mouse */
-}
-
-/* === Rodapé === */
-footer {
-  text-align: center;      /* Centraliza o texto */
-  padding: 20px;           /* Espaçamento interno */
-  background-color: rgba(26, 26, 26, 0.6); /* Fundo escuro semi-transparente */
-  font-size: 14px;         /* Tamanho da fonte do rodapé */
-  margin-top: 100px;       /* Espaço acima do rodapé */
-  border-top: 1px solid #444; /* Linha divisória superior */
-  position: relative;      /* Permite posicionamento relativo */
-  z-index: 2;              /* Garante que fique acima do vídeo e overlay */
+.nav-links a:hover {
+  color: #f4d03f;
 }
