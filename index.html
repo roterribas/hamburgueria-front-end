@@ -1,54 +1,99 @@
 <!DOCTYPE html>
-<html lang="pt-br"> <!-- Define o tipo de documento e a linguagem como português do Brasil -->
-
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
-  <title>Hamburgueria</title> <!-- Título da aba do navegador -->
-  <link rel="stylesheet" href="./style/style.css"> <!-- Importa o arquivo CSS externo -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site com Vídeo e Menu Transparente</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- Vídeo de fundo -->
-  <video autoplay muted loop id="bg-video">
-    <!-- Define o vídeo que será exibido como fundo da página -->
-    <source src="./videos/fundo.mp4" type="video/mp4">
-    <!-- Mensagem alternativa caso o navegador não suporte vídeo HTML5 -->
-    Seu navegador não suporta vídeos em HTML5.
-  </video>
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="videos/kaue.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo HTML5.
+    </video>
 
-  <!-- Camada escura por cima do vídeo para melhorar contraste do conteúdo -->
-  <div class="overlay"></div>
+    <!-- Menu transparente -->
+    <header class="menu">
+      <div class="menu-content">
+        <div class="logo">
+          <img src="imagens/logo.jpg" alt="Logo da Empresa">
+        </div>
+        <nav class="nav-links">
+          <a href="#">Início</a>
+          <a href="#">Cardapio</a>
+          <a href="#">Sobre</a>
+          <a href="#">Contato</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+  
+	<main>
+  
+		<section class="infos">
+			<img class="loja" src="imagens/espaco.jpg" alt="imagem da frente da loja">
+		
+			<div class="localizacao-horario">
+				<h2>Horário de Funcionamento</h2>
+				<h3>Delivery</h3>
+				<p>Sexta, sábado, domingo e feriado, das 12h às 23h59</p></br>
+				<h3>Salão</h3>
+				<p>Terça a quinta, das 17h às 23h30</p>
+				<p>Sexta, sábado, domingo e feriado, das 12h às 23h30</p></br>
+				
+				<h2>Localização</h2>
+				<p>Av. Prof. Joaquim Barreto, 860 - Centro, Cotia - SP, 06700-170</p>
+			</div>
+		</section>
 
-  <!-- Cabeçalho com logo e menu de navegação -->
-  <header class="top-bar">
-    <div class="logo">
-      <!-- Imagem da logo da hamburgueria -->
-      <img src="./images/logo.jpg" alt="Logo">
-    </div>
+		<section class="plataformas">
+			<h2>Faça o seu pedido</h2>
+			
+			<div class="logos">
+				<img src="imagens/ifood.png">     
+			
+				<img src="imagens/anota-ai.png">
+			</div>
+		</section>
+	  
+		<section class="avaliacoes">
+			<h2>O que os nossos clientes dizem</h2>
+			
+			<div class="avaliacao1">
+				<p>"Lugar muito bom, primeira experiência e pretendo voltar mais vezes, atendentes super educados e proativos, local com música no volume perfeito, temperatura ambiente agradável, acentos limpos e bem dispostos pelo salão, lanches bem grandes, porções saborosas e sobremesas bem servidas, local que eu recomendo!"</p>
+			</div>
+	  
+			<div class="avaliacao2">
+				<p>"Primeira vez que fomos nesse endereço, a qualidade e o excelente atendimento continuam o mesmo!
+					Aprovado e recomendado!"</p>
+			</div>
+	  
+			<div class="avaliacao3">
+				<p>"Ameiii o novo espaço!
+					Muito acolhedor e organizado.
+					O hambúrguer continua sendo nosso TOP 1!
+					DELICIOSOS!!!!"</p>
+			</div>
+	  
+			<div class="avaliacao4">
+				<p>"O lanche é muito saboroso e os ingredientes sempre fresquinhos, já pedi pelo iFood várias vezes e sempre o que mais me surpreende é a velocidade na entrega do pedido, sem dúvidas o melhor da região."</p>
+			</div>
+		</section>
 
-    <nav class="menu">
-      <!-- Lista de links do menu de navegação -->
-      <ul>
-        <li><a href="index.html">Página Inicial</a></li> <!-- Link para a página inicial -->
-        <li><a href="cardapio.html">Cardápio</a></li> <!-- Link para o cardápio -->
-        <li><a href="sobre.html">Sobre</a></li> <!-- Link para a seção "Sobre" -->
-        <li><a href="contato.html">Contato</a></li> <!-- Link para a seção de contato -->
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Rodapé da página -->
-  <footer>
-    <p>TODOS OS DIREITOS RESERVADOS</p> <!-- Texto de direitos autorais -->
-  </footer>
-
-  <!-- Script para controlar a velocidade do vídeo de fundo -->
-    <script>
-    const video = document.getElementById("bg-video");
-    video.playbackRate = 0.5; // Define a velocidade de reprodução do vídeo (2x mais rápido)
-    </script>
+		<section class="formulario">
+			<form>
+				<h2>Receba ofertas exclusivas!</h2>
+				<p>Cadastre-se para receber promoções, cupons de descontos e lançamentos exclusivos!</p>
+				<input type="text" name="nome" placeholder="Digite seu nome">
+	  
+				<input type="email" name="email" placeholder="Seu melhor e-mail">
+		
+				<input type="number" name="telefone" placeholder="DDD + WhatsApp">
+				
+				<button type="submit">Quero Receber!</button>
+			</form>
+		</section>
+	</main>
 </body>
-
-
-</html>
