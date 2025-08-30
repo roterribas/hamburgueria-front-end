@@ -1,39 +1,32 @@
-<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
-<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
-  <title>Contato - Hamburgueria</title> <!-- Título exibido na aba do navegador -->
-  
-  <!-- Importa os arquivos de estilo CSS -->
-  <link rel="stylesheet" href="./style/style.css"> <!-- Estilos gerais do site -->
-  <link rel="stylesheet" href="./style/contato.css"> <!-- Estilos específicos da página de contato -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site com Vídeo e Menu Transparente</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body> <!-- Início do corpo da página -->
+<body>
 
-  <!-- Vídeo de fundo que cobre toda a tela -->
-  <video autoplay muted loop id="bg-video"> <!-- Reproduz automaticamente, sem som e em loop -->
-    <source src="./videos/fundo.mp4" type="video/mp4"> <!-- Fonte do vídeo em formato MP4 -->
-    Seu navegador não suporta vídeos em HTML5. <!-- Mensagem alternativa caso o vídeo não carregue -->
-  </video>
+<div class="video-container">
+	<video autoplay muted loop playsinline>
+		<source src="videos/kaue.mp4" type="video/mp4">
+		Seu navegador não suporta vídeo HTML5.
+    </video>
 
-  <!-- Camada escura sobre o vídeo para melhorar a legibilidade do conteúdo -->
-  <div class="overlay"></div>
-
-  <!-- Cabeçalho com logo e menu de navegação -->
-  <header class="top-bar"> <!-- Barra superior da página -->
-    <div class="logo"> <!-- Área da logo -->
-      <img src="./images/logo.jpg" alt="Logo"> <!-- Imagem da logo da hamburgueria -->
+<header class="menu">
+	<div class="menu-content">
+		<div class="logo">
+			<img src="imagens/logo.jpeg" alt="Logo da Empresa">
+		</div>
+		<nav class="nav-links">
+			<a href="#">Início</a>
+			<a href="#">Cardapio</a>
+			<a href="#">Sobre</a>
+			<a href="#">Contato</a>
+		</nav>
     </div>
-
-    <nav class="menu"> <!-- Menu de navegação principal -->
-      <ul> <!-- Lista de links do menu -->
-        <li><a href="index.html">Página Inicial</a></li> <!-- Link para a página inicial -->
-        <li><a href="cardapio.html">Cardápio</a></li> <!-- Link para o cardápio -->
-        <li><a href="sobre.html">Sobre</a></li> <!-- Link para a página sobre a empresa -->
-        <li><a href="contato.html">Contato</a></li> <!-- Link para a página de contato -->
-      </ul>
-    </nav>
-  </header>
+</header>
+</div>
 
   <!-- Seção principal de contato -->
   <section class="contato"> <!-- Seção estilizada para o formulário de contato -->
