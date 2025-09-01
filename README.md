@@ -6,6 +6,8 @@ Esse projeto é sobre uma hamburgueria chamada KAUÊ BURGUER, localizada no cent
 
 ### index - BARBARA
 
+nesta pagina teremos
+
 ### sobre - MATHEUS
 
 ### cardapio - GUILHERME
