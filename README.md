@@ -6,7 +6,13 @@ Esse projeto é sobre uma hamburgueria chamada KAUÊ BURGUER, localizada no cent
 
 ### index - BARBARA
 
-nesta pagina teremos
+nesta pagina teremos uma imagem da frente da loja, um grid falando sobre o horario de funcionamento para o delivery e o horario do salão, caso queira comer no local.
+
+Um outro grid falando onde esta localizado a hamburgueria.
+
+Uma sessão para se a pessoa quiser pedir pelos sites do Ifood e do anota.ai
+
+Depois teremos outra sessão aonde vemos comentarios de alguns clientes falando sobre a hamburgueria e logo a baixo um formulario onde a pessoa pode colocar seus dados para reseber ofertas exclusivas, que pode receber por email e tanto pelo whatsapp
 
 ### sobre - MATHEUS
 
