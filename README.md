@@ -16,6 +16,10 @@ Depois teremos outra sessão aonde vemos comentarios de alguns clientes falando 
 
 ### sobre - MATHEUS
 
+Nessa pagina teremos um conteiner sobre a historia da empresa.
+
+Logo embaixo teremos uma sessão sobre a linha do tempo da historia, falando sobre o inicio da loja até od dias atuais.
+
 ### cardapio - GUILHERME
 
 ### contato - RODRIGO
