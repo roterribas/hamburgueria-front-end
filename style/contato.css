@@ -1,92 +1,171 @@
-/* === Seção de contato centralizada === */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Vídeo de fundo */
+.video-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Menu */
+.menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  max-width: 120px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Seção de contato */
 .contato {
-  display: flex; /* Usa Flexbox para alinhar os elementos filhos */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  /* min-height: 100vh; <-- Esta linha foi removida para corrigir a rolagem e o layout */
-  padding: 20px; /* Espaçamento interno para evitar que o conteúdo fique colado nas bordas */
-  position: relative; /* Permite posicionar elementos filhos de forma absoluta se necessário */
-  z-index: 1; /* Garante que a seção fique acima de elementos como o vídeo de fundo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #111;
 }
 
-/* === Caixa do formulário === */
 .contato form {
-  background: rgba(0, 0, 0, 0.8); /* Fundo preto semi-transparente para destacar o formulário */
-  padding: 40px; /* Espaçamento interno generoso */
-  border-radius: 12px; /* Cantos arredondados para suavizar o visual */
-  max-width: 500px; /* Largura máxima do formulário */
-  width: 100%; /* Ocupa toda a largura disponível até o limite */
-  box-shadow: 0 0 25px rgba(255, 204, 0, 0.5); /* Sombra dourada suave para destaque */
-  border: 1px solid #ffcc00; /* Borda dourada para reforçar o estilo da marca */
-  display: flex; /* Usa Flexbox para organizar os campos */
-  flex-direction: column; /* Empilha os elementos verticalmente */
-  gap: 15px; /* Espaço entre os elementos internos */
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 25px rgba(255, 204, 0, 0.5);
+  border: 1px solid #ffcc00;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-/* === Título === */
 .contato h2 {
-  text-align: center; /* Centraliza o texto do título */
-  margin: 0 0 20px 0; /* Remove margem superior e adiciona espaço abaixo */
-  font-size: 26px; /* Define o tamanho da fonte do título */
-  color: #ffcc00; /* Cor dourada para destacar o título */
+  text-align: center;
+  font-size: 26px;
+  color: #ffcc00;
+  margin-bottom: 20px;
 }
 
-/* === Campos === */
 .contato input,
 .contato textarea {
-  /* width: 100%; */ /* Comentado pois o Flexbox já cuida disso */
-  padding: 12px; /* Espaçamento interno para conforto na digitação */
-  border: none; /* Remove borda padrão do navegador */
-  border-radius: 6px; /* Cantos arredondados para suavizar o visual */
-  background: #222; /* Fundo escuro para combinar com o tema */
-  color: #fff; /* Texto branco para contraste */
-  font-size: 15px; /* Tamanho da fonte dos campos */
-  resize: none; /* Impede redimensionamento do textarea */
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+  font-size: 15px;
 }
 
 .contato textarea {
-  min-height: 100px; /* Altura mínima para o campo de mensagem */
+  min-height: 100px;
+  resize: none;
 }
 
-/* === Destaque ao focar === */
 .contato input:focus,
 .contato textarea:focus {
-  outline: none; /* Remove contorno padrão ao focar */
-  border: 1px solid #ffcc00; /* Adiciona borda dourada ao focar para indicar interação */
+  outline: none;
+  border: 1px solid #ffcc00;
 }
 
-/* === Checkbox + texto (ajustado) === */
-.contato label {
-  display: flex; /* Alinha checkbox e texto lado a lado */
-  align-items: center; /* Centraliza verticalmente */
-  gap: 8px; /* Espaço entre o checkbox e o texto */
-  font-size: 14px; /* Tamanho da fonte do texto explicativo */
-  color: #ddd; /* Cor clara para o texto */
-  flex-wrap: wrap; /* Permite quebra de linha se o texto for longo */
-}
-
-/* === Botão (ajustado para ser menor e centralizado) === */
 .contato button {
-  padding: 14px 40px; /* Espaçamento interno vertical e horizontal */
-  border: none; /* Remove borda padrão */
-  border-radius: 6px; /* Cantos arredondados para suavizar o botão */
-  background: #ffcc00; /* Cor de fundo dourada para destacar o botão */
-  color: #000; /* Texto preto para contraste */
-  font-weight: bold; /* Texto em negrito para dar destaque */
-  font-size: 16px; /* Tamanho da fonte do botão */
-  cursor: pointer; /* Cursor de mãozinha ao passar o mouse */
-  transition: background 0.3s; /* Transição suave ao mudar a cor no hover */
-  align-self: center; /* Centraliza o botão dentro do formulário */
+  padding: 14px 40px;
+  border: none;
+  border-radius: 6px;
+  background: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-self: center;
 }
 
 .contato button:hover {
-  background: #e6b800; /* Cor dourada mais escura ao passar o mouse */
+  background: #e6b800;
 }
 
-fieldset {
-  border-radius: 5px;
-  color: #ddd;
-  background: #222;
-  border: 1px solid;
-  font-weight: bold;
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contato {
+    padding: 20px 10px;
+  }
+
+  .contato form {
+    padding: 20px;
+  }
 }
