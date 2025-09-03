@@ -1,34 +1,36 @@
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site com Vídeo e Menu Transparente</title>
+  <title>Contato</title>
   <!-- Importa os arquivos de estilo CSS -->
   <link rel="stylesheet" href="./style/style.css"> <!-- Estilos gerais do site -->
   <link rel="stylesheet" href="./style/contato.css"> <!-- Estilos específicos da página de contato -->
 </head>
+
 <body> <!-- Início do corpo da página -->
 
-<div class="video-container">
-	<video autoplay muted loop playsinline>
-		<source src="videos/kaue.mp4" type="video/mp4">
-		Seu navegador não suporta vídeo HTML5.
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="videos/kaue.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo HTML5.
     </video>
 
-<header class="menu">
-	<div class="menu-content">
-		<div class="logo">
-			<img src="images/logo.jpg" alt="Logo da Empresa"> 
-		</div>
-		<nav class="nav-links">
-			<a href="index.html">Início</a>
-			<a href="#">Cardapio</a>
-			<a href="#">Sobre</a>
-			<a href="contato.html">Contato</a>
-		</nav>
-    </div>
-</header>
-</div>
+    <header class="menu">
+      <div class="menu-content">
+        <div class="logo">
+          <img src="images/logo.jpg" alt="Logo da Empresa">
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Início</a>
+          <a href="cardapio.html">Cardapio</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </header>
+  </div>
 
   <!-- Seção principal de contato -->
   <section class="contato"> <!-- Seção estilizada para o formulário de contato -->
@@ -39,29 +41,8 @@
         <input type="text" name="nome" placeholder="Seu nome" required> <!-- Campo para nome do usuário -->
         <input type="email" name="email" placeholder="Seu e-mail" required> <!-- Campo para e-mail -->
         <input type="tel" name="whatsapp" placeholder="Seu WhatsApp" required> <!-- Campo para número de WhatsApp -->
-        <textarea name="mensagem" placeholder="Sua mensagem" rows="4"></textarea> <!-- Campo de mensagem com 4 linhas -->
-
-        <!-- <article class="sastisfacao">
-          <label for="nivel" class="titulo">NIVEL DE SASTIFAÇÃO</label>
-          <input type="range" id="nivel" min="0" max="10">
-        </article> -->
-
-        <!-- <article> -->
-          <!-- <fieldset> -->
-          <!-- <legend>NOVIDADES</legend> -->
-        <!-- Checkbox para consentimento de comunicação -->
-         <!-- Quero receber por WhatsApp ou e-mail? Texto explicativo -->
-        <!-- <label class="checkbox-container"> Agrupamento do checkbox com texto -->
-        <!-- <input type="checkbox" name="atualizacoes"> Checkbox para receber atualizações -->
-        <!-- E-MAIL -->
-        <!-- </label> -->
-        <!-- <label class="checkbox-container"> Agrupamento do checkbox com texto -->
-        <!-- <input type="checkbox" name="atualizacoes"> Checkbox para receber atualizações -->
-        <!-- WhatsApp -->
-        <!-- </label> -->
-        <!-- </fieldset> -->
-        <!-- </article> -->
-
+        <textarea name="mensagem" placeholder="Sua mensagem" rows="4"></textarea>
+        <!-- Campo de mensagem com 4 linhas -->
         <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
       </form>
     </div>
@@ -75,7 +56,8 @@
   <!-- Script para controlar a velocidade do vídeo de fundo -->
   <script>
     const video = document.getElementById("bg-video"); // Seleciona o vídeo pelo ID
-   video.playbackRate = 0.5; // Define a velocidade de reprodução como 2x
+    video.playbackRate = 0.5; // Define a velocidade de reprodução como 2x
   </script>
 </body>
+
 </html>
