@@ -1,77 +1,153 @@
-.courses {
-	display: flex;             
-	gap: 40px;                  
-	justify-content: center;    
-	flex-wrap: wrap;   
-	width: 100%;
+
+.burguer {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.course {
+.cardburguer {
   border: 3px solid #ffcc00;
   border-radius: 20px;
   padding: 20px;
-  background: #fff;
+  background: #black;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 45%;
   display: flex;
-  box-shadow: 0 0 10px #ffcc00; 
+  align-items: flex-start;
+  box-shadow: 0 0 10px #ffcc00;
+  transition: transform 0.5s ease;
+  background: black;
+  gap: 10px;
 }
-.course:last-child {
+
+.cardburguer:last-child {
   flex-basis: 96%;
 }
 
-.course:last-child .course-image {
-  width: 400px;
+.cardburguer:last-child .cardburguer-image {
+  min-width: 350px;
+  max-width: 850px;
 }
 
-.course-image {
+.cardburguer-image {
   display: flex;
   width: 200px;
-  border-radius: 10px;
-  padding: .5em;
+  min-width: 200px;
+  max-width: 850px;
   border-radius: 20px;
+  padding: .5em;
   box-shadow: 0 0 10px #ffcc00;
 }
 
-.course-category {
-  background: lightgray;
-  margin-top: 1em;
-  display: inline-block;
-  border-radius: 5px;
-  padding: .5em;
-}
-
-.course-texto {
+.cardburguer-texto {
   display: block;
   width: 100%;
-  padding: .5em;
-  margin: 0 auto; 
+  padding: 10px;
+  margin: 0 auto;
   line-height: 1.3;
-  font-family: Debby;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  
+  
+}
+
+.cardburguer h2 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #ffcc00;
 }
 
 
-.course:hover {
-	transition-duration: 1s;
-	transform: scale(1.05);
+.cardburguer:hover {
+  transform: scale(1.05);
 }
 
-main {   
-	padding: 15px 40px;  
-	display: flex;
-	width: 80%;
-	margin: 0 auto 200px auto;
+
+main {
+  padding: 15px 40px;
+  display: flex;
+  width: 80%;
+  margin: 0 auto 200px auto;
 }
 
 
 .letreiro-image {
-	 margin: 0;
-	padding: 0;
-	width:100%;	
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-radius: 10px;
 }
 
 
+@media (max-width: 1024px) {
+  .cardburguer {
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  .cardburguer-image {
+    width: 100%;
+    min-width: unset;
+    max-width: 500px;
+  }
 
+  .cardburguer-texto {
+    padding: 10px;
+  }
+  
+  p {
+	color: black;
+}
 
+@media (max-width: 768px) {
+  .cardburguer {
+    gap: 20px;
+  }
+
+  .cardburguer {
+    flex-basis: 100%;
+    padding: 15px;
+  }
+
+  .cardburguer h2 {
+    font-size: 1.1rem;
+	color: #fff;
+  }
+
+  .cardburguer-texto p {
+    font-size: 0.9rem;
+	 color: #fff;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .cardburguer {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .cardburguer-image {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .cardburguer h2 {
+    font-size: 1rem;
+	color: #fff;
+  }
+
+  .cardburguer-texto p {
+    font-size: 0.85rem;
+	color: #fff;
+  }
+}
