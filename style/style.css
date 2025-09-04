@@ -9,6 +9,7 @@ body {
   font-family: sans-serif; 
 }
 
+
 .video-container {
   position: relative;
   width: 100%;
@@ -33,7 +34,7 @@ body {
   left: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.55); 
-  font-size: 30px;
+  font-size: 20px;
 
 }
 
