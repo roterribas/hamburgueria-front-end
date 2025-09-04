@@ -1,18 +1,14 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
 }
 
 body {
-font-family: Arial, sans-serif;
-background: #000;
-color: #fff;
+  background: black;
+  font-family: sans-serif; 
 }
 
-p {
-color: #fff;
-}
 
 .video-container {
   position: relative;
@@ -21,6 +17,8 @@ color: #fff;
   overflow: hidden;
   margin-bottom: 0px;
   box-shadow: 0 0 10px #ffcc00;
+  
+
 }
 
 .video-container video {
@@ -28,6 +26,7 @@ color: #fff;
   height: 100%;
   object-fit: cover;
 }
+
 
 .menu {
   position: absolute;
@@ -57,116 +56,18 @@ color: #fff;
 }
 
 .nav-links a {
-color: #fff;
-text-decoration: none;
-margin-left: 30px;
-font-weight: bold;
-transition: color 0.3s;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: bold;
+  transition: color 0.3s;
+  border-radius: 20px;
+  padding: 5px;
+  
 }
 
 .nav-links a:hover {
-color: #f4d03f;
-}
-
-h2 {
-font-size: 48px;
-color: #ffcc00;
-letter-spacing: 2px;
-text-align: center;
-margin: 40px;
-}
-
-.sobre-nos1, .sobre-nos2 {
-max-width: 1000px;
-margin: 0 auto 10px auto;
-padding: 0px;
-line-height: 1.8;
-font-size: 18px;
-display: flex;
-gap: 50px;
-}
-
-.sobre-nos1 img .sobre-nos2 img {
-display: block;
-margin: 10px auto;
-border-radius: 12px;
-box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
-}
-
-.img-frente-loja {
-max-width: 350px;
-width: 100%;
-height: auto;
-border-radius: 15px;
-}
-
-.timeline {
-border-left: 4px solid #b22222;
-margin: 50px auto;
-padding-left: 30px;
-max-width: 1000px;
-position: relative;
-}
-
-.titulo-evento {
-margin-bottom: 30px;
-}
-
-.titulo-evento h3 {
-font-size: 22px;
-font-weight: bold;
-color: #ffcc00;
-margin-bottom: 10px;
-}
-
-.titulo-evento span {
-display: block;
-font-size: 14px;
-color: #666;
-margin-top: 5px;
-}
-
-.evento {
-display: flex;
-align-items: flex-start;
-margin: 40px 0 60px 0;
-gap: 20px;
-}
-
-.timeline h4 {
-font-weight: 1;
-flex: 1;
-font-size: 17px;
-letter-spacing: 1.2px;
-display: block;
-line-height: 1.5;
-text-align: justify-content;
-}
-
-.timeline img {
-flex: 1;
-max-width: 400px;
-border-radius: 10px;
-box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-object-fit: cover;
-}
-
-.img-faixada21, .img-faixada25 {
-max-height: 400px;
-}
-
-section {
-  position: relative;
-}
-
-section:after {
-  content: "";
-  display: block;
-  width: 80%;
-  height: 2px;
-  margin: 50px auto;
-  background: linear-gradient(to right, transparent, #ffcc00, transparent);
-  border-radius: 2px;
+  color: #f4d03f;
 }
 
 footer {
@@ -180,9 +81,4 @@ footer {
   z-index: 2;              
   color: #fff;
   box-shadow: 0 0 10px #ffcc00;
-}
-
-footer p {
-margin: 0;
-color: #ccc;
 }
