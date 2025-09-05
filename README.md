@@ -1,4 +1,4 @@
-# hamburgueria-front-end
+# KAUÊ BURGER
 
 ## Sobre o projeto 
 
