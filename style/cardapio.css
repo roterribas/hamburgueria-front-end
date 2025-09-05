@@ -104,6 +104,16 @@ main {
 	color: black;
 }
 
+  .cardburguer h2 {
+    font-size: 1rem;
+	color: #fff;
+  }
+
+  .cardburguer-texto p {
+    font-size: 0.85rem;
+	color: #fff;
+  }
+
 @media (max-width: 768px) {
   .cardburguer {
     gap: 20px;
@@ -151,3 +161,4 @@ main {
 	color: #fff;
   }
 }
+
