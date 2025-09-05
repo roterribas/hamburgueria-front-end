@@ -86,17 +86,6 @@ background: linear-gradient(to right, transparent, #ffcc00, transparent);
 border-radius: 2px;
 }
 
-footer {
-text-align: center;
-padding: 20px;
-background-color: rgba(26, 26, 26, 0.6);
-font-size: 14px;
-margin-top: 50px;
-border-top: 1px solid #444;
-color: #fff;
-box-shadow: 0 0 10px #ffcc00;
-}
-
 @media (max-width: 768px) {
 h2 {
   font-size: 2rem;
