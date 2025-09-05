@@ -22,6 +22,16 @@ Logo embaixo teremos uma sessão sobre a linha do tempo da historia, falando sob
 
 ### cardapio - GUILHERME
 
+Nesta pagina teremos alguns itens do cardapio separados por grid, onde em cada grid tem o item, nome e descrição do item.
+
+Podemos ver que começa com os lanches principais que vendem, com uma foto do lanche, nome do sanduiche e sua descrição.
+
+Depois dos lanches, temos algumas opçoes de tipos de batatas e logo a baixo as opções de bebidas, entre sucos e refrigerantes.
+
+E por fim temos um grid falando sobre a opção de rodizio de mini hamburguer, que é uma opção que o cliente pode escolher ao ir comer no local.
+
+Podemos perceber que ao clicar em uma foto, o site é redirecionado para a pagina do anota.ai, para poder fazer o pedido do item que foi clicado.
+
 ### contato - RODRIGO
 
 Nesta pagina tera um formulario para o usuario tirar as suas duvidas, colocando seu nome, email, whatsapp, comentario e ele pode escolher por onde quer receber novidas, por email ou whatsapp
