@@ -1,15 +1,11 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato</title>
-  <!-- Importa os arquivos de estilo CSS -->
-  <link rel="stylesheet" href="./style/style.css"> <!-- Estilos gerais do site -->
-  <link rel="stylesheet" href="./style/contato.css"> <!-- Estilos específicos da página de contato -->
+  <title>Kauê Burguer</title>
+  <link rel="stylesheet" href="style\contato.css">
 </head>
-
-<body> <!-- Início do corpo da página -->
 
   <div class="video-container">
     <video autoplay muted loop playsinline>
@@ -32,28 +28,40 @@
     </header>
   </div>
 
-  <!-- Seção principal de contato -->
-  <section class="contato"> <!-- Seção estilizada para o formulário de contato -->
-    <div class="container"> <!-- Container para centralizar e limitar a largura do conteúdo -->
-      <h2>Fale com a gente</h2> <!-- Título da seção de contato -->
+<body>
 
-      <form> <!-- Início do formulário -->
-        <input type="text" name="nome" placeholder="Seu nome" required> <!-- Campo para nome do usuário -->
-        <input type="email" name="email" placeholder="Seu e-mail" required> <!-- Campo para e-mail -->
-        <input type="tel" name="whatsapp" placeholder="Seu WhatsApp" required> <!-- Campo para número de WhatsApp -->
-        <textarea name="mensagem" placeholder="Sua mensagem" rows="4"></textarea>
-        <!-- Campo de mensagem com 4 linhas -->
-        <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
-      </form>
+  <section class="contato">
+      <h2>Fale Conosco</h2>
+  <div class="container">
+    
+    <div class="contato-texto">
+      <p><br>
+        Estamos prontos para atender você! <br><br>
+        Entre em contato para tirar dúvidas, fazer pedidos ou deixar seu feedback.
+        Nossa equipe responderá o mais rápido possível!
+      </p>
+      <p>
+        <br>
+        WhatsApp: <a href = "wa.me/5511933522363">(11) 93352-2363</a><br>
+        E-mail: <a href="mailto:contato@kaueburguer.com.br"></a>contato@kaueburguer.com.br
+      </p>
     </div>
-  </section>
 
-  <!-- Rodapé da página -->
+    <form>
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="tel" name="whatsapp" placeholder="Seu WhatsApp" required>
+      <textarea name="mensagem" placeholder="Sua mensagem" rows="4"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+  </div>
+</section>
+
   <footer>
-    <p>TODOS OS DIREITOS RESERVADOS</p> <!-- Texto de direitos autorais -->
+    <p>TODOS OS DIREITOS RESERVADOS</p>
   </footer>
 
-  <!-- Script para controlar a velocidade do vídeo de fundo -->
   <script>
     const video = document.getElementById("bg-video"); // Seleciona o vídeo pelo ID
     video.playbackRate = 0.5; // Define a velocidade de reprodução como 2x
