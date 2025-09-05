@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página Inicial</title>
+  <title>Bem-vindo ao Kaue Burguer</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="./style/index.css">
 </head>
@@ -39,10 +40,10 @@
 			<div class="localizacao-horario">
 				<h2>Horário de Funcionamento</h2>
 				<h3>Delivery</h3>
-				<p>Sexta, sábado, domingo e feriado, das 12h às 23h59</p></br>
+				<p>Sexta, sábado, domingo e feriado, das <time datetime="12:00">12h</time> às <time datetime="23:59">23h59</time></p><br>
 				<h3>Salão</h3>
-				<p>Terça a quinta, das 17h às 23h30</p>
-				<p>Sexta, sábado, domingo e feriado, das 12h às 23h30</p></br>
+				<p>Terça a quinta, das <time datetime="17:00">17h</time> às <time datetime="23:30">23h30</time></p>
+				<p>Sexta, sábado, domingo e feriado, das <time datetime="12:00">12h</time> às <time datetime="23:30">23h30</time></p><br>
 				<h2>Localização</h2>
 				<address>
 					<a href="https://maps.app.goo.gl/UGtJH2ph6A7CZMmM8">Av. Prof. Joaquim Barreto, 860 - Centro, Cotia - SP, 06700-170</a>
@@ -94,12 +95,30 @@
 		
 				<input type="number" name="telefone" placeholder="DDD + WhatsApp">
 				
-				<button type="submit">Quero Receber!</button>
+				<button type="submit">Quero receber!</button>
 			</form>
 		</section>
 	</main>
+	
 	<footer>
+		<img class="logo-footer" src="images/logo.jpg" alt="logo da hamburgueria">
 		<p>&copy; 2025 Kaue Burguer. Todos os direitos reservados.</p>
+		<div class="redes-sociais">
+			<div>
+			<h3>Nossas redes sociais</h3>
+			<a href="https://wa.me/5511933522363">
+			  <img src="images/whatsapp.png" alt="logo do whatsApp">
+			</a>
+			
+			<a href="https://www.instagram.com/kaueburgeroficial/">
+			  <img src="images/instagram.png" alt="logo do instagram">
+			</a>
+			
+			<a href="https://web.facebook.com/kaueburguer/?locale=pt_BR&_rdc=1&_rdr#">
+			  <img src="images/facebook.png" alt="logo do facebook">
+			</a>
+			</div>
+		</div>
 	</footer>
 
 </body>
