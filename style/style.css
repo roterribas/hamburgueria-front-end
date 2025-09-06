@@ -15,6 +15,10 @@ color: #fff;
   src: url(fonts/BebasNeue);
 }
 
+:root {
+  --amarelo: #ffcc00;
+}
+
 p {
 color: #fff;
 }
@@ -25,7 +29,7 @@ color: #fff;
   height: 650px;
   overflow: hidden;
   margin-bottom: 0px;
-  box-shadow: 0 0 10px #ffcc00;
+  box-shadow: 0 0 10px var(--amarelo);
 }
 
 .video-container video {
@@ -56,8 +60,8 @@ color: #fff;
   width: 100px;            
   height: 100px;           
   border-radius: 50%;     
-  border: 3px solid #ffcc00;
-  box-shadow: 0 0 10px #ffcc00; 
+  border: 3px solid var(--amarelo);
+  box-shadow: 0 0 10px var(--amarelo); 
 }
 
 .nav-links a {
@@ -74,7 +78,7 @@ color: #f4d03f;
 
 h2 {
 font-size: 48px;
-color: #ffcc00;
+color: var(--amarelo);
 letter-spacing: 2px;
 text-align: center;
 margin: 40px;
@@ -93,14 +97,14 @@ footer {
   position: relative;      
   z-index: 2;              
   color: #fff;
-  box-shadow: 0 0 10px #ffcc00;
+  box-shadow: 0 0 10px var(--amarelo);
 }
 
 .logo-footer {
   width: 80px;            
   height: 80px;           
   border-radius: 50%;     
-  border: 3px solid #ffcc00;
+  border: 3px solid var(--amarelo);
 }
 
 footer p {
