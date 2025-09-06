@@ -1,4 +1,3 @@
-/* ====== RESET ====== */
 * {
   margin: 0;
   padding: 0;
@@ -10,78 +9,6 @@ body {
   background: #000;
   color: #000;
   line-height: 1.6;
-}
-
-/* ====== VIDEO + MENU ====== */
-* {
-  margin: 0;
-  padding: 0;
-
-}
-
-body {
-  background: black;
-  font-family: sans-serif; 
-}
-
-.video-container {
-  position: relative;
-  width: 100%;
-  height: 650px;
-  overflow: hidden;
-  margin-bottom: 0px;
-  box-shadow: 0 0 10px #ffcc00;
-  
-
-}
-
-.video-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-.menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.55); 
-  font-size: 20px;
-
-}
-
-.menu-content {
-  max-width: 1200px;  
-  margin: 0 auto;      
-  padding: 15px 40px; 
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-}
-
-.logo img {
-  width: 100px;            
-  height: 100px;           
-  border-radius: 50%;     
-  border: 3px solid #ffcc00;
-  box-shadow: 0 0 10px #ffcc00; 
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 30px;
-  font-weight: bold;
-  transition: color 0.3s;
-  border-radius: 20px;
-  padding: 5px;
-  
-}
-
-.nav-links a:hover {
-  color: #f4d03f;
 }
 
 /* ====== TÍTULOS ====== */
@@ -122,7 +49,7 @@ h3 {
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-a {
+.infos a {
 	color: white;
 }
 
@@ -146,7 +73,6 @@ a {
   text-align: center;
   
 }
-
 
 .plataformas .logos img {
   max-width: 200px;
@@ -178,6 +104,11 @@ a {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   font-style: italic;
+  color: black;
+}
+
+.avaliacoes div p {
+	color: black;
 }
 
 /* ====== FORMULÁRIO ====== */
@@ -251,15 +182,101 @@ section::after {
   border-radius: 2px;
 }
 
-footer {
-  text-align: center;     
-  padding: 20px;           
-  background-color: rgba(26, 26, 26, 0.6); 
-  font-size: 14px;        
-  margin-top: 100px;       
-  border-top: 1px solid #444; 
-  position: relative;      
-  z-index: 2;              
-  color: #fff;
-  box-shadow: 0 0 10px #ffcc00;
+section:last-of-type::after {
+  content: none;
 }
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 1024px) {
+  .infos {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .infos .loja {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .localizacao-horario {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .localizacao-horario h2,
+  .localizacao-horario h3 {
+    text-align: center;
+  }
+
+  .plataformas .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .plataformas .logos img {
+    max-width: 150px;
+  }
+
+  .avaliacoes {
+    padding: 0 20px;
+  }
+
+  .formulario {
+    padding: 0 20px;
+  }
+
+
+@media (max-width: 480px) {
+   h2 {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .infos {
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .infos img.loja {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .localizacao-horario {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .localizacao-horario h2,
+  .localizacao-horario h3 {
+    text-align: center;
+  }
+
+  .plataformas .logos img {
+    max-width: 120px;
+    margin: 10px 0;
+  }
+
+  .avaliacoes div {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .formulario p {
+    font-size: 14px;
+  }
+
+  .formulario input,
+  .formulario button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
