@@ -10,6 +10,11 @@ background: #000;
 color: #fff;
 }
 
+@font-face {
+  font-family: BebasNeue;
+  src: url(fonts/BebasNeue);
+}
+
 p {
 color: #fff;
 }
@@ -100,6 +105,8 @@ footer {
 
 footer p {
   margin: 0px;
+  font-family: 'BebasNeue';
+  font-size: medium;
 }
 
 .redes-sociais {
